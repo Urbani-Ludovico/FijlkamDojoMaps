@@ -13,10 +13,10 @@ pkg_search_module(CJSON REQUIRED libcjson)
 project(DojoMaps_GetData C)
 add_executable(DojoMaps_GetData
     get_data/src/main.c
-    get_data/src/options.c
     get_data/include/options.h
-    get_data/src/driver.c
+    get_data/src/options.c
     get_data/include/driver.h
+    get_data/src/driver.c
 )
 
 target_link_libraries(DojoMaps_GetData PRIVATE

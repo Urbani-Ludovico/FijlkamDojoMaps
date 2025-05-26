@@ -2,6 +2,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <glib.h>
+
+static GOptionEntry entries[] = {{"output", 'o', 0, G_OPTION_ARG_FILENAME, &output_path, "Output file to json file", "FILE"}, G_OPTION_ENTRY_NULL};
 
 
 int parse_options(int argc, char* argv[]) {
