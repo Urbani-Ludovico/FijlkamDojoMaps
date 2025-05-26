@@ -5,4 +5,6 @@
 
 int parse_options(int argc, char* argv[]);
 
+void options_free();
+
 #endif

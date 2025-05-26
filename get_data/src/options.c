@@ -27,3 +27,9 @@ int parse_options(int argc, char* argv[]) {
 
     return EXIT_SUCCESS;
 }
+
+void options_free() {
+    if (output_path != nullptr) {
+        free(output_path);
+    }
+}

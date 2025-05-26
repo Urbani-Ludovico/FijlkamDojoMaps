@@ -17,8 +17,12 @@ int main(const int argc, char* argv[]) {
     // Curl init
     //
     if (curl_init() != EXIT_SUCCESS) {
+        options_free();
         return EXIT_FAILURE;
     }
+
+    curl_end();
+    options_free();
 
     return EXIT_SUCCESS;
 }
